@@ -1,0 +1,57 @@
+/* Your code here */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+button {
+    font-size: 22;
+    padding: 15px;
+    margin: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1px;
+}
+
+.square {
+    border: solid 4px #000000;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.empty {
+    background-color: transparent;
+  }
+  
+.correct {
+    background-color: rgb(237, 5, 5);
+  }
+  
+.incorrect {
+    background-color: rgb(123, 119, 119)
+  }
